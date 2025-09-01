@@ -84,9 +84,7 @@
     #send-button:hover { background-color: var(--primary-hover); }
     #send-button:disabled { background-color: var(--text-light); cursor:not-allowed; }
 
-    .typing-indicator {
-      display:none; margin-bottom:1rem; font-style:italic; color: var(--text-light);
-    }
+    .typing-indicator { display:none; margin-bottom:1rem; font-style:italic; color: var(--text-light); }
     .typing-indicator.visible { display:block; }
 
     footer { margin-top:1rem; text-align:center; font-size:0.85rem; color:var(--text-light); }
@@ -107,14 +105,14 @@
   <div class="chat-container">
     <div id="chat-messages" class="chat-messages">
       <div class="message assistant-message">
-        <p>Hey There! I'm Mark Anthony's AI. How can I assist you today?</p>
+        <p>Hello! I'm Mark Anthony's AI. How can I assist you today?</p>
       </div>
     </div>
 
-    <div class="typing-indicator" id="typing-indicator">One second Honey...<span class="dots">...</span></div>
+    <div class="typing-indicator" id="typing-indicator">Mark Anthony's AI is typing<span class="cursor">█</span></div>
 
     <div class="message-input">
-      <textarea id="user-input" placeholder="**__Type message here...__**" rows="1" autofocus></textarea>
+      <textarea id="user-input" placeholder="Type your message..." rows="1" autofocus></textarea>
       <button id="send-button">Send</button>
     </div>
   </div>
